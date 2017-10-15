@@ -1,0 +1,15 @@
+<form class="form-horizontal">
+    <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Kode Provinsi</label>
+        <div class="col-sm-7">
+            <input type="text" name="kdProvinsi" class="form-control" [(ngModel)]="dataEdit.kdProvinsi" id="inputEmail3">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Nama Propinsi</label>
+        <div class="col-sm-7">
+            <input type="text" name="NamaProvinsi" class="form-control" [(ngModel)]="dataEdit.NamaProvinsi">
+        </div>
+    </div>
+    <button (click)="simpanPropinsi(dataEdit._id)">Simpan</button>
+</form>

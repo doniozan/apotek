@@ -1,0 +1,18 @@
+
+<form  (ngSubmit) = "propinsiTambah(dataProvinsiTambah)" class="form-horizontal">
+    <div class="form-group">
+        <label for="inputEmail3" class="col-sm-1 control-label">Kode Provinsi</label>
+        <div class="col-sm-10">
+            <input [(ngModel)]="dataPropinsiTambah.kdProvinsi" type="text" name="kdProvinsi" class="form-control">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputEmail3" class="col-sm-1 control-label">Nama Provinsi</label>
+        <div class="col-sm-10">
+            <input [(ngModel)]="dataPropinsiTambah.NamaProvinsi" name="NamaProvinsi" type="text" class="form-control">
+        </div>
+    </div>
+    <button class="btn btn-success" type="submit">Save</button>
+</form>
+        
+    

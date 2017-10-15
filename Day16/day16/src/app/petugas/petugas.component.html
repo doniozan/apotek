@@ -1,0 +1,26 @@
+<div>
+  <a [routerLink]="['./tambah']" class="btn btn-info"><span class="glyphicon glyphicon-plus"></span> Create Data</a>
+  <table class="table">
+  
+    <tr>
+      <td><h2>Kode Petugas</h2></td>
+      <td><h2>Nama Petugas</h2></td>
+	  <td><h2>Alamat Petugas</h2></td>
+	  <td><h2>Nama Kota</h2></td>
+	  <td><h2>Nama Provinsi</h2></td>
+      <td><h2>Aksi</h2></td>
+    </tr>
+    <tr *ngFor="let item of dataPetugas">
+      <td>{{item.kdPetugas}}</td>
+      <td>{{item.NamaPetugas}}</td>
+	  <td>{{item.AlamatPetugas}}</td>
+	  <td>{{item.NamaKota}}</td>
+	  <td>{{item.NamaProvinsi}}</td>
+      <td>
+          <a [routerLink]="['./detail/'+item._id]" class="btn btn-success"><span class="glyphicon glyphicon-search"></span></a>
+          <a routerLink="./update/{{item._id}}" class="btn btn-info"><span class="glyphicon glyphicon-pencil"></span></a>
+          <a class="btn btn-danger" (click)="petugasDelete(item._id)"><span class="glyphicon glyphicon-trash"></span></a>
+      </td>
+    </tr>
+  </table>
+</div>

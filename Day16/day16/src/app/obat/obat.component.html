@@ -1,0 +1,22 @@
+<div>
+    <a [routerLink]="['./tambah']" class="btn btn-info"><span class="glyphicon glyphicon-plus"></span> Create Data</a>
+    <table class="table">
+      <tr>
+        <td><h2>Kode Obat</h2></td>
+        <td><h2>Nama Obat</h2></td>
+        <td><h2>Kategori Obat</h2></td>
+        <td><h2>Aksi</h2></td>
+      </tr>
+      <tr *ngFor="let item of dataObat">
+        <td>{{item.kdIndukObat}}</td>
+        <td>{{item.NamaIndukObat}}</td>
+        <td>{{item.KategoriObat}}</td>
+        <td>
+            <a [routerLink]="['./detail/'+item._id]" class="btn btn-success"><span class="glyphicon glyphicon-search"></span></a>
+            <a routerLink="./update/{{item._id}}" class="btn btn-info"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a class="btn btn-danger" (click)="obatDelete(item._id)"><span class="glyphicon glyphicon-trash"></span></a>
+        </td>
+      </tr>
+    </table>
+  </div>
+  

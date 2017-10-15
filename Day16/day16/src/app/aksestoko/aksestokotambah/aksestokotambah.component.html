@@ -1,0 +1,23 @@
+<form  (ngSubmit) = "aksesTokoTambah(dataPetugasTambah)" class="form-horizontal">
+    <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Kode Akses</label>
+        <div class="col-sm-9">
+            <input [(ngModel)]="dataAksesTokoTambah.kdAkses" type="text" name="kdAkses" class="form-control">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Nama Akses</label>
+        <div class="col-sm-9">
+            <input [(ngModel)]="dataAksesTokoTambah.NamaAkses" name="NamaAkses" type="text" class="form-control">
+        </div>
+    </div>
+	<div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Keterangan</label>
+        <div class="col-sm-9">
+            <input [(ngModel)]="dataAksesTokoTambah.Keterangan" name="Keterangan" type="text" class="form-control">
+        </div>
+    </div>
+    <button class="btn btn-success" type="submit">Save</button>
+</form>
+        
+    

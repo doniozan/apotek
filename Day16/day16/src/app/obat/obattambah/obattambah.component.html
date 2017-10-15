@@ -1,0 +1,23 @@
+<form  (ngSubmit) = "obatTambah(dataPetugasTambah)" class="form-horizontal">
+    <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Kode Obat</label>
+        <div class="col-sm-9">
+            <input [(ngModel)]="dataObatTambah.kdIndukObat" type="text" name="kdIndukObat" class="form-control">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Nama Obat</label>
+        <div class="col-sm-9">
+            <input [(ngModel)]="dataObatTambah.NamaIndukObat" name="NamaIndukObat" type="text" class="form-control">
+        </div>
+    </div>
+	<div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Kategori Obat</label>
+        <div class="col-sm-9">
+            <input [(ngModel)]="dataObatTambah.KategoriObat" name="KategoriObat" type="text" class="form-control">
+        </div>
+    </div>
+    <button class="btn btn-success" type="submit">Save</button>
+</form>
+        
+    
